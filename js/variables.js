@@ -8,7 +8,4 @@ let Direccion = "sarchi"
 
 
 
-console.log(nombre);
-console.log(apellido);
-console.log(edad);
-console.log(direccion);
+console.log("Hola mi nombre es :"+Nombre+"Y mi apellido es:"+Apellido+" "+"mi edad es "+Edad+"vivo en "+Direccion)
