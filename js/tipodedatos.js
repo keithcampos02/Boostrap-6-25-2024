@@ -1,13 +1,23 @@
-console.log("Hola Mundo");
+// 2. Tipos de datos 
 
-// zona para declarar variables
+// String- Cadena=  con comillas dobles solo permitte ingresar un Valor 
+let Nombre = "keith" ;
+// Integer, Decimal=  sin comillas dobles 
+let Edad = 24  ;
+// bool, boolean  =True o false  
+let TieneMascotas = true ;
+let TieneGatos = false;
+// arreglo[],array es una lista de variables [ X,Y ,Z]  permitte ingresar varios Valores 
+let Frutas =  ["Manzana","Pera","Uva",true, 35] ;
+
+// Objeto{} permite representar datos de la vida real ejemplo auto, casa, videojuego 
+
+let PersonaTobias = {
+    // llave: valor 
+    nombre:"Tobias",
+    edad:29,
+    tieneMascotas:true
+ } ;
 
 
-let Nombre = "keith"
-let Edad = "24"
-let tiene mascotas = true
-let tiene gatos = false
-let ventana 
-let mensaje2 = "es usted mayor de edad?"
-
-
+// Fin de Zona para declarar variables 
