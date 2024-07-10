@@ -35,3 +35,8 @@ let parrafotexto = document.getElementById("texto")
 
 parrafotexto.textContent = "lorem ipsum dolor sit"
 parrafotexto.style.backgroundColor = "green"
+
+
+let titulo = document.getElementById("titulo")
+titulo.textContent = "gatoo"   //CAMBIA EL TEXTO O PONE TEXTO
+titulo.innerHTML = "PERROOS"   // CAMBIA TEXTO O PONE TEXTO 
