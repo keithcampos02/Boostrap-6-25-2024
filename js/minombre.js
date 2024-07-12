@@ -3,8 +3,8 @@ console.log("funcionando")
 
 
 
-function Guardar() {
-    alert("funcionando")
+function Guardar(event) {
+    event.preventdefault();
     
 const formulario = document.getElementById("fomulario");
 const valor1 = document.getElementById("valor1").value;
