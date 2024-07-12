@@ -14,47 +14,33 @@
 
 <body>
 
-
-
-
     <div class="container mt-5 d-flex justify-content-center">
         <div class="col-md-6">
-            <h2>Datos Personales </h2>
-            <form id="formulario">
+            <h2>Calculadora </h2>
+            <form id="Formulario">
                 <div class="form-group">
-                    <label for="">ingrese el primer valor </label>
-                    <input type="text" class="form-control" name="" id="valor1" aria-describedby="helpId" placeholder="">
+                    <label for="">Ingrese el primer valor</label>
+                    <input type="text" class="form-control" name="" id="Num1" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
+
                 <div class="form-group">
-                    <label for="">ingrese el segundo valor</label>
-                    <input type="text" class="form-control" name="" id="valor2" aria-describedby="helpId" placeholder="">
+                    <label for="">Ingrese el segundo valor</label>
+                    <input type="text" class="form-control" name="" id="Num2" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" onclick="calcular()">calcular</button>
+                <button type="submit" class="btn btn-primary btn-block" onclick="sumar(event)">sumar </button>
+                <button type="submit" class="btn btn-danger btn-block" onclick="restar(event)">restar </button>
             </form>
-            <div id="valorrespuesta">hola el nombre digitado y el apellido digitado</div>
-        </div>
+            <div id="Resultado">
+            </div>
+        
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="js/calculadora.js"></script>
+    <script src="JS/Calculadora.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
