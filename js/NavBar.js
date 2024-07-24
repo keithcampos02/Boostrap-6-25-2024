@@ -1,17 +1,48 @@
 
-mostrar_NavBar();
 
-function mostrar_NavBar() {
+//Componente NavBar
+Mostrar_NavBar();
+// Objetos de JS
+//Let Contenedor =ID
+//Let Plantilla = "Hola Mundo objetos de JS"
+//Contenedor.innerHTML = Plantilla
 
-    let opcion1 = "inicio"
-    let opcion2 = "listado de productos"
-    let opcion3 = "nuevo producto"
-    let opcion4 = "pagina de mercadeo"
+function Mostrar_NavBar() {
+// let Opcion1 = "Inicio";
+// let Opcion2 = "Listado de Productos";
+// let Opcion3 = "Crear Producto";
+// let Opcion4 = "Pagina de Mercadeo";
+// let Menu={
+//     Nombre: "Inicio",
+//     Ruta:"Index.html"
+// }
+//Arreglo [{},{},{}]
 
+//Bucles o Ciclos 
+let ListadoMenu  = [
+    {
+        Nombre: "Inicio",
+        Ruta:"Index.html"       
+    },
+    {
+        Nombre: "Listado de Productos",
+        Ruta:"List-Products.html"       
+    },
+    {
+        Nombre: "Crear Producto",
+        Ruta:"New-Product.html"       
+    },
+    {
+        Nombre: "Pagina de Mercadeo",
+        Ruta:""       
+    }
+]
+console.log(ListadoMenu)
+let Contenedor = document.getElementById('V_NavBar')
 
-    let contenedor = document.getElementById('V_NavBar')
+let Plantilla = `
 
-    let plantilla = ` <a class="navbar-brand" href="#">Navbar</a>
+ <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,19 +50,17 @@ function mostrar_NavBar() {
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Index.html">${opcion1} <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="${ListadoMenu[0].Ruta}">${ListadoMenu[0].Nombre} <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="List-Products.html">${opcion2}</a>
+                            <a class="nav-link" href="${ListadoMenu[1].Ruta}">${ListadoMenu[1].Nombre}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="New-Product.html">${opcion3}</a>
+                            <a class="nav-link" href="${ListadoMenu[2].Ruta}">${ListadoMenu[2].Nombre}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">${opcion4}</a>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">${ListadoMenu[3].Nombre}</a>
                         </li>
-                        
-            
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -47,10 +76,10 @@ function mostrar_NavBar() {
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
-                </div> `
+                </div>
 
+`
 
-
-    contenedor.innerHTML = plantilla
+Contenedor.innerHTML = Plantilla 
 
 }
