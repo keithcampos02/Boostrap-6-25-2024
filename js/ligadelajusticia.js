@@ -1,3 +1,11 @@
+console.log("funcionando")
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    mostrar_ligadelajusticia(Heroes)
+
+})
 
 
 const Heroes = [
@@ -26,8 +34,30 @@ const Heroes = [
       casa: "DC"
     }
   ];
-  
-  const imagenDefault = 'img/default.jpg'; // Imagen de respaldo
-  
 
-  
+
+
+
+
+
+
+
+
+
+function mostrar_ligadelajusticia(Heroes) {
+    // let Contenedor
+    // let Plantilla
+
+let plantilla = " ";
+Heroes.forEach(element => {
+    
+   plantilla += `Nombre: ${element.nombre} Bio: ${element.bio} Casa: ${element.casa} Imagen: ${element.img}`
+});
+
+
+
+
+    // Contenedor.innerhtml = Plantilla
+alert(plantilla)
+    
+}
