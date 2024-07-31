@@ -1,11 +1,13 @@
 
 
-//Componente NavBar
-Mostrar_NavBar();
-// Objetos de JS
-//Let Contenedor =ID
-//Let Plantilla = "Hola Mundo objetos de JS"
-//Contenedor.innerHTML = Plantilla
+document.addEventListener('DOMContentLoaded', ev => {
+    Mostrar_NavBar()
+})
+
+
+
+
+
 
 function Mostrar_NavBar() {
 // let Opcion1 = "Inicio";
@@ -58,9 +60,7 @@ let Plantilla = `
                         <li class="nav-item">
                             <a class="nav-link" href="${ListadoMenu[2].Ruta}">${ListadoMenu[2].Nombre}</a>
                         </li>
-                       <li class="nav-item">
-                            <a class="nav-link" href="#">${ListadoMenu[3].Nombre}</a>
-                        </li>
+                    
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
